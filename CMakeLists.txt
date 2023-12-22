@@ -8,4 +8,6 @@ if (CMAKE_BUILD_TYPE MATCHES Debug)
     add_definitions(-DDEBUG=1)
 endif()
 
-add_executable(EXCHANGE2.0 main.cpp)
+include_directories(include)
+
+add_executable(EXCHANGE2.0 src/main.cpp)
