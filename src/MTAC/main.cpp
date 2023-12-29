@@ -1,6 +1,5 @@
-//
-// Created by arch on 22.12.23.
-//
-int main(){
+#import <iostream>
 
+int main(){
+    std::cout << "Hello, World!" << std::endl;
 }
