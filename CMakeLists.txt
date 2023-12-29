@@ -12,6 +12,12 @@ endif()
 
 include_directories(include)
 
-add_executable(EXCHANGE2.0_MAAS src/MAAS/main.cpp)
-add_executable(EXCHANGE2.0_MTAS src/MTAS/main.cpp)
-add_executable(EXCHANGE2.0_MTAC src/MTAC/main.cpp)
+add_executable(EXCHANGE2.0_MAAS src/MAAS/main.cpp
+        include/Logger/Logger.cpp
+)
+add_executable(EXCHANGE2.0_MTAS src/MTAS/main.cpp
+        include/Logger/Logger.cpp
+)
+add_executable(EXCHANGE2.0_MTAC src/MTAC/main.cpp
+        include/Logger/Logger.cpp
+)
