@@ -11,9 +11,12 @@
 
 int main()
 {
-    Logger::LoggerClass logger;
+    std::string logFile = LOGFILE;
 
-    logger.log((std::string &) "Hello World!", 2);
+    Logger::LoggerClass logger(Logger::states::debug, true, logFile);
+
+    logger.log("Hello World!", Logger::states::info);
+    logger.log("Hello World!", Logger::states::debug);
 
 return 0;
 };
